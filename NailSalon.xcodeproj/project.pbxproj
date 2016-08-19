@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19FBE69E1D671C6B009D379F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE69D1D671C6B009D379F /* AppDelegate.swift */; };
+		19FBE6A01D671C6B009D379F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE69F1D671C6B009D379F /* ViewController.swift */; };
+		19FBE6A31D671C6B009D379F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FBE6A11D671C6B009D379F /* Main.storyboard */; };
+		19FBE6A51D671C6B009D379F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FBE6A41D671C6B009D379F /* Assets.xcassets */; };
+		19FBE6A81D671C6B009D379F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FBE6A61D671C6B009D379F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19FBE69A1D671C6B009D379F /* NailSalon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NailSalon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19FBE69D1D671C6B009D379F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19FBE69F1D671C6B009D379F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19FBE6A21D671C6B009D379F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19FBE6A41D671C6B009D379F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19FBE6A71D671C6B009D379F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19FBE6A91D671C6B009D379F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19FBE6971D671C6B009D379F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19FBE6911D671C6B009D379F = {
+			isa = PBXGroup;
+			children = (
+				19FBE69C1D671C6B009D379F /* NailSalon */,
+				19FBE69B1D671C6B009D379F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19FBE69B1D671C6B009D379F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19FBE69A1D671C6B009D379F /* NailSalon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19FBE69C1D671C6B009D379F /* NailSalon */ = {
+			isa = PBXGroup;
+			children = (
+				19FBE69D1D671C6B009D379F /* AppDelegate.swift */,
+				19FBE69F1D671C6B009D379F /* ViewController.swift */,
+				19FBE6A11D671C6B009D379F /* Main.storyboard */,
+				19FBE6A41D671C6B009D379F /* Assets.xcassets */,
+				19FBE6A61D671C6B009D379F /* LaunchScreen.storyboard */,
+				19FBE6A91D671C6B009D379F /* Info.plist */,
+			);
+			path = NailSalon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19FBE6991D671C6B009D379F /* NailSalon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19FBE6AC1D671C6B009D379F /* Build configuration list for PBXNativeTarget "NailSalon" */;
+			buildPhases = (
+				19FBE6961D671C6B009D379F /* Sources */,
+				19FBE6971D671C6B009D379F /* Frameworks */,
+				19FBE6981D671C6B009D379F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NailSalon;
+			productName = NailSalon;
+			productReference = 19FBE69A1D671C6B009D379F /* NailSalon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19FBE6921D671C6B009D379F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mycompany;
+				TargetAttributes = {
+					19FBE6991D671C6B009D379F = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8XHZKK774L;
+					};
+				};
+			};
+			buildConfigurationList = 19FBE6951D671C6B009D379F /* Build configuration list for PBXProject "NailSalon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19FBE6911D671C6B009D379F;
+			productRefGroup = 19FBE69B1D671C6B009D379F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19FBE6991D671C6B009D379F /* NailSalon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19FBE6981D671C6B009D379F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FBE6A81D671C6B009D379F /* LaunchScreen.storyboard in Resources */,
+				19FBE6A51D671C6B009D379F /* Assets.xcassets in Resources */,
+				19FBE6A31D671C6B009D379F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19FBE6961D671C6B009D379F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FBE6A01D671C6B009D379F /* ViewController.swift in Sources */,
+				19FBE69E1D671C6B009D379F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19FBE6A11D671C6B009D379F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19FBE6A21D671C6B009D379F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19FBE6A61D671C6B009D379F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19FBE6A71D671C6B009D379F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19FBE6AA1D671C6B009D379F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19FBE6AB1D671C6B009D379F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19FBE6AD1D671C6B009D379F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NailSalon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mycompany.NailSalon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19FBE6AE1D671C6B009D379F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NailSalon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mycompany.NailSalon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19FBE6951D671C6B009D379F /* Build configuration list for PBXProject "NailSalon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FBE6AA1D671C6B009D379F /* Debug */,
+				19FBE6AB1D671C6B009D379F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19FBE6AC1D671C6B009D379F /* Build configuration list for PBXNativeTarget "NailSalon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FBE6AD1D671C6B009D379F /* Debug */,
+				19FBE6AE1D671C6B009D379F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19FBE6921D671C6B009D379F /* Project object */;
+}
