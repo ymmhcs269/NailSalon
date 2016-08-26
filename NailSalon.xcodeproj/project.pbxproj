@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19B37DF61D700307006AE30C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19B37DF51D700307006AE30C /* GoogleService-Info.plist */; };
+		19B37E161D70173D006AE30C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B37E151D70173D006AE30C /* PostData.swift */; };
 		19FBE69E1D671C6B009D379F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE69D1D671C6B009D379F /* AppDelegate.swift */; };
 		19FBE6A01D671C6B009D379F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE69F1D671C6B009D379F /* ViewController.swift */; };
 		19FBE6A31D671C6B009D379F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FBE6A11D671C6B009D379F /* Main.storyboard */; };
 		19FBE6A51D671C6B009D379F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FBE6A41D671C6B009D379F /* Assets.xcassets */; };
 		19FBE6A81D671C6B009D379F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FBE6A61D671C6B009D379F /* LaunchScreen.storyboard */; };
+		19FBE6BA1D6EB2EA009D379F /* NailSalonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6B91D6EB2EA009D379F /* NailSalonTableViewController.swift */; };
+		19FBE6BD1D6EB529009D379F /* NailSalonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6BB1D6EB529009D379F /* NailSalonTableViewCell.swift */; };
+		19FBE6BE1D6EB529009D379F /* NailSalonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19FBE6BC1D6EB529009D379F /* NailSalonTableViewCell.xib */; };
+		19FBE6C11D6ED79A009D379F /* FromPicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6BF1D6ED79A009D379F /* FromPicsTableViewCell.swift */; };
+		19FBE6C21D6ED79A009D379F /* FromPicsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19FBE6C01D6ED79A009D379F /* FromPicsTableViewCell.xib */; };
+		19FBE6C41D6ED9C0009D379F /* FromPicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6C31D6ED9C0009D379F /* FromPicsTableViewController.swift */; };
+		19FBE6C61D6EDA29009D379F /* ForFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6C51D6EDA29009D379F /* ForFirstViewController.swift */; };
+		19FBE6C81D6EDA4A009D379F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6C71D6EDA4A009D379F /* ResultViewController.swift */; };
+		19FBE6CA1D6EDAD9009D379F /* FromDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6C91D6EDAD9009D379F /* FromDetailViewController.swift */; };
+		19FBE6CC1D6EDB03009D379F /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6CB1D6EDB03009D379F /* PostViewController.swift */; };
+		675DBB807D7F3DD2F8D57114 /* Pods_NailSalon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDE1B6F6C7FAA87D1C94ACE /* Pods_NailSalon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19B37DF51D700307006AE30C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		19B37E151D70173D006AE30C /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		19FBE69A1D671C6B009D379F /* NailSalon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NailSalon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FBE69D1D671C6B009D379F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19FBE69F1D671C6B009D379F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +37,19 @@
 		19FBE6A41D671C6B009D379F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19FBE6A71D671C6B009D379F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19FBE6A91D671C6B009D379F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19FBE6B91D6EB2EA009D379F /* NailSalonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NailSalonTableViewController.swift; sourceTree = "<group>"; };
+		19FBE6BB1D6EB529009D379F /* NailSalonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NailSalonTableViewCell.swift; sourceTree = "<group>"; };
+		19FBE6BC1D6EB529009D379F /* NailSalonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NailSalonTableViewCell.xib; sourceTree = "<group>"; };
+		19FBE6BF1D6ED79A009D379F /* FromPicsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromPicsTableViewCell.swift; sourceTree = "<group>"; };
+		19FBE6C01D6ED79A009D379F /* FromPicsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FromPicsTableViewCell.xib; sourceTree = "<group>"; };
+		19FBE6C31D6ED9C0009D379F /* FromPicsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromPicsTableViewController.swift; sourceTree = "<group>"; };
+		19FBE6C51D6EDA29009D379F /* ForFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForFirstViewController.swift; sourceTree = "<group>"; };
+		19FBE6C71D6EDA4A009D379F /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		19FBE6C91D6EDAD9009D379F /* FromDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromDetailViewController.swift; sourceTree = "<group>"; };
+		19FBE6CB1D6EDB03009D379F /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		22B33808432176BCDCD09E82 /* Pods-NailSalon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NailSalon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NailSalon/Pods-NailSalon.debug.xcconfig"; sourceTree = "<group>"; };
+		E825F87A40BBF14BC35B4D31 /* Pods-NailSalon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NailSalon.release.xcconfig"; path = "Pods/Target Support Files/Pods-NailSalon/Pods-NailSalon.release.xcconfig"; sourceTree = "<group>"; };
+		FFDE1B6F6C7FAA87D1C94ACE /* Pods_NailSalon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NailSalon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675DBB807D7F3DD2F8D57114 /* Pods_NailSalon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +69,8 @@
 			children = (
 				19FBE69C1D671C6B009D379F /* NailSalon */,
 				19FBE69B1D671C6B009D379F /* Products */,
+				D91766C8A03B2D15F303C072 /* Pods */,
+				632386A277D7A35CAF43A112 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +85,43 @@
 		19FBE69C1D671C6B009D379F /* NailSalon */ = {
 			isa = PBXGroup;
 			children = (
+				19FBE6B91D6EB2EA009D379F /* NailSalonTableViewController.swift */,
+				19FBE6C71D6EDA4A009D379F /* ResultViewController.swift */,
+				19FBE6C31D6ED9C0009D379F /* FromPicsTableViewController.swift */,
 				19FBE69D1D671C6B009D379F /* AppDelegate.swift */,
 				19FBE69F1D671C6B009D379F /* ViewController.swift */,
 				19FBE6A11D671C6B009D379F /* Main.storyboard */,
+				19FBE6C91D6EDAD9009D379F /* FromDetailViewController.swift */,
+				19FBE6C51D6EDA29009D379F /* ForFirstViewController.swift */,
+				19FBE6BF1D6ED79A009D379F /* FromPicsTableViewCell.swift */,
+				19FBE6C01D6ED79A009D379F /* FromPicsTableViewCell.xib */,
+				19FBE6CB1D6EDB03009D379F /* PostViewController.swift */,
+				19B37E151D70173D006AE30C /* PostData.swift */,
+				19FBE6BB1D6EB529009D379F /* NailSalonTableViewCell.swift */,
+				19FBE6BC1D6EB529009D379F /* NailSalonTableViewCell.xib */,
 				19FBE6A41D671C6B009D379F /* Assets.xcassets */,
 				19FBE6A61D671C6B009D379F /* LaunchScreen.storyboard */,
 				19FBE6A91D671C6B009D379F /* Info.plist */,
+				19B37DF51D700307006AE30C /* GoogleService-Info.plist */,
 			);
 			path = NailSalon;
+			sourceTree = "<group>";
+		};
+		632386A277D7A35CAF43A112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFDE1B6F6C7FAA87D1C94ACE /* Pods_NailSalon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D91766C8A03B2D15F303C072 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22B33808432176BCDCD09E82 /* Pods-NailSalon.debug.xcconfig */,
+				E825F87A40BBF14BC35B4D31 /* Pods-NailSalon.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19FBE6AC1D671C6B009D379F /* Build configuration list for PBXNativeTarget "NailSalon" */;
 			buildPhases = (
+				35DA158391452EF86A30FFAC /* [CP] Check Pods Manifest.lock */,
 				19FBE6961D671C6B009D379F /* Sources */,
 				19FBE6971D671C6B009D379F /* Frameworks */,
 				19FBE6981D671C6B009D379F /* Resources */,
+				77C392A6F341772DD7CAF39C /* [CP] Embed Pods Frameworks */,
+				5F6B53E2F1A23B51C21C5C9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,20 +187,80 @@
 			buildActionMask = 2147483647;
 			files = (
 				19FBE6A81D671C6B009D379F /* LaunchScreen.storyboard in Resources */,
+				19FBE6BE1D6EB529009D379F /* NailSalonTableViewCell.xib in Resources */,
 				19FBE6A51D671C6B009D379F /* Assets.xcassets in Resources */,
 				19FBE6A31D671C6B009D379F /* Main.storyboard in Resources */,
+				19B37DF61D700307006AE30C /* GoogleService-Info.plist in Resources */,
+				19FBE6C21D6ED79A009D379F /* FromPicsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35DA158391452EF86A30FFAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F6B53E2F1A23B51C21C5C9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NailSalon/Pods-NailSalon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77C392A6F341772DD7CAF39C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NailSalon/Pods-NailSalon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19FBE6961D671C6B009D379F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19FBE6C11D6ED79A009D379F /* FromPicsTableViewCell.swift in Sources */,
+				19FBE6BA1D6EB2EA009D379F /* NailSalonTableViewController.swift in Sources */,
 				19FBE6A01D671C6B009D379F /* ViewController.swift in Sources */,
+				19FBE6C81D6EDA4A009D379F /* ResultViewController.swift in Sources */,
+				19FBE6CC1D6EDB03009D379F /* PostViewController.swift in Sources */,
 				19FBE69E1D671C6B009D379F /* AppDelegate.swift in Sources */,
+				19FBE6CA1D6EDAD9009D379F /* FromDetailViewController.swift in Sources */,
+				19FBE6C61D6EDA29009D379F /* ForFirstViewController.swift in Sources */,
+				19FBE6C41D6ED9C0009D379F /* FromPicsTableViewController.swift in Sources */,
+				19B37E161D70173D006AE30C /* PostData.swift in Sources */,
+				19FBE6BD1D6EB529009D379F /* NailSalonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +371,7 @@
 		};
 		19FBE6AD1D671C6B009D379F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B33808432176BCDCD09E82 /* Pods-NailSalon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NailSalon/Info.plist;
@@ -259,6 +383,7 @@
 		};
 		19FBE6AE1D671C6B009D379F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E825F87A40BBF14BC35B4D31 /* Pods-NailSalon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NailSalon/Info.plist;
@@ -287,6 +412,7 @@
 				19FBE6AE1D671C6B009D379F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

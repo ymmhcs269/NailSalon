@@ -9,10 +9,44 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+ 
+        //条件から検索できる画面に遷移
+    @IBAction func fromDetail(sender: AnyObject){
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewControllerWithIdentifier("FromDetail") as! FromDetailViewController
+        self.presentViewController(nextView, animated: true, completion: nil)
+    }
+    
+    
+        //画像から検索できる画面に遷移
+    @IBAction func fromPics(sender: AnyObject) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewControllerWithIdentifier("FromPics") as! FromPicsTableViewController
+        self.presentViewController(nextView, animated: true, completion: nil)
+    }
+    
+    
+        //初心者のひとのためのQ&A画面に遷移（今の所失敗）
+    @IBAction func forFirst(sender: AnyObject) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewControllerWithIdentifier("ForFirst") as! ForFirstViewController
+        self.presentViewController(nextView, animated: true, completion: nil)
+    }
+    
+    
+        //ネイルサロン登録画面に遷移
+    @IBAction func post(sender: AnyObject) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewControllerWithIdentifier("Post") as! PostViewController
+        self.presentViewController(nextView, animated: true, completion: nil)
+    }
+  
+    
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    super.viewDidLoad()
+        
     }
 
     override func didReceiveMemoryWarning() {
