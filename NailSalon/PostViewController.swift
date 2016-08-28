@@ -8,8 +8,11 @@
 
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
-class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,UITextFieldDelegate {
     
     @IBOutlet weak var salonNameTextField: UITextField!
     @IBOutlet weak var nailImageView: UIImageView!
@@ -19,6 +22,8 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var budgetTextField: UITextField!
     //(仮)@IBOutlet weak var assessmentTextField: UITextField!
     
+    
+    
     @IBAction func picsInputButton(sender: AnyObject) {
         // ライブラリ（カメラロール）を指定してピッカーを開く
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
@@ -26,8 +31,32 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             pickerController.delegate = self
             pickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
             presentViewController(pickerController, animated: true, completion: nil)
+            
         }
     }
+    
+    
+    
+    @IBAction func postButton(sender: AnyObject) {
+        
+         let postRef = FIRDatabase.database().reference().child(CommonConst.PostPATH)
+        
+        // ImageViewから画像を取得する
+        let imageData = UIImageJPEGRepresentation(nailImageView.image!, 0.5)
+        
+        
+        // 辞書を作成してFirebaseに保存する(評価はまだ入れていない)
+         let postData = ["name": salonNameTextField.text!, "station": stationTextField.text!, "menu1": menuTextField1.text!,"menu2": menuTextField2.text!, "budget": budgetTextField.text!, "image": imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)]
+         postRef.childByAutoId().setValue(postData)
+         
+        /*let postData = ["caption": textField.text!, "image": imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength), "name": name, "time": time]
+        postRef.childByAutoId().setValue(postData)*/
+        
+        
+        // 全てのモーダルを閉じる
+        UIApplication.sharedApplication().keyWindow?.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     
     
     @IBAction func backButton(sender: AnyObject) {
@@ -39,7 +68,19 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //キーボードを閉じるための作業
+        self.salonNameTextField.delegate = self
+        self.stationTextField.delegate = self
+        self.menuTextField1.delegate = self
+        self.menuTextField2.delegate = self
+        self.budgetTextField.delegate = self
+        
+    }
+    
+    //キーボードを閉じる
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,8 +93,9 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
         if info[UIImagePickerControllerOriginalImage] != nil {
-            // 撮影/選択された画像を取得する
-            nailImageView = info[UIImagePickerControllerOriginalImage] as! UIImageView
+            // (今の所ここがダメ)撮影/選択された画像を取得する
+            let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+            nailImageView.image = image
             
             // ここでpresentViewControllerを呼び出しても表示されないためメソッドが終了してから呼ばれるようにする
             dispatch_async(dispatch_get_main_queue()) {
@@ -67,8 +109,8 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     //ここ今はよく分からないところ
     //let imageData = UIImageJPEGRepresentation(nailImageView.image!,0.5)
-
-
+   
+    
     
     
 }

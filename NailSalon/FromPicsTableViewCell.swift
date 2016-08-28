@@ -25,3 +25,6 @@ class FromPicsTableViewCell: UITableViewCell {
     }
     
 }
+
+
+

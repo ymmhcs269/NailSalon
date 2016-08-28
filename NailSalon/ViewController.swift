@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     
-        //初心者のひとのためのQ&A画面に遷移（今の所失敗）
+        //初心者のひとのためのQ&A画面に遷移）
     @IBAction func forFirst(sender: AnyObject) {
         let storyboard: UIStoryboard = self.storyboard!
         let nextView = storyboard.instantiateViewControllerWithIdentifier("ForFirst") as! ForFirstViewController

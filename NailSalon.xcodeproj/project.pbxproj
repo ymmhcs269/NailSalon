@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1958136D1D7076E600ADADB3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 1958136C1D7076E600ADADB3 /* index.html */; };
+		1958138F1D72DB4500ADADB3 /* nail1.html in Resources */ = {isa = PBXBuildFile; fileRef = 1958138E1D72DB4500ADADB3 /* nail1.html */; };
+		195813931D72FC7400ADADB3 /* nail2.html in Resources */ = {isa = PBXBuildFile; fileRef = 195813921D72FC7400ADADB3 /* nail2.html */; };
+		195813951D72FD3800ADADB3 /* nail3.html in Resources */ = {isa = PBXBuildFile; fileRef = 195813941D72FD3800ADADB3 /* nail3.html */; };
+		195813971D72FD4500ADADB3 /* nail4.html in Resources */ = {isa = PBXBuildFile; fileRef = 195813961D72FD4500ADADB3 /* nail4.html */; };
+		195813991D72FD5400ADADB3 /* nail5.html in Resources */ = {isa = PBXBuildFile; fileRef = 195813981D72FD5400ADADB3 /* nail5.html */; };
+		1958139C1D72FDB200ADADB3 /* nail6.html in Resources */ = {isa = PBXBuildFile; fileRef = 1958139B1D72FDB200ADADB3 /* nail6.html */; };
+		195813A01D72FDF800ADADB3 /* nail8.html in Resources */ = {isa = PBXBuildFile; fileRef = 1958139F1D72FDF800ADADB3 /* nail8.html */; };
+		195813A21D72FE0D00ADADB3 /* nail9.html in Resources */ = {isa = PBXBuildFile; fileRef = 195813A11D72FE0D00ADADB3 /* nail9.html */; };
+		195813A41D72FE6500ADADB3 /* nail7.html in Resources */ = {isa = PBXBuildFile; fileRef = 195813A31D72FE6500ADADB3 /* nail7.html */; };
+		195813A61D72FE6A00ADADB3 /* nail10.html in Resources */ = {isa = PBXBuildFile; fileRef = 195813A51D72FE6A00ADADB3 /* nail10.html */; };
+		195813A81D72FE7B00ADADB3 /* nail11.html in Resources */ = {isa = PBXBuildFile; fileRef = 195813A71D72FE7B00ADADB3 /* nail11.html */; };
+		195813AA1D7304A300ADADB3 /* ForFirstWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195813A91D7304A300ADADB3 /* ForFirstWebViewController.swift */; };
+		195813AC1D73718500ADADB3 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195813AB1D73718500ADADB3 /* Const.swift */; };
 		19B37DF61D700307006AE30C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19B37DF51D700307006AE30C /* GoogleService-Info.plist */; };
 		19B37E161D70173D006AE30C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B37E151D70173D006AE30C /* PostData.swift */; };
 		19FBE69E1D671C6B009D379F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE69D1D671C6B009D379F /* AppDelegate.swift */; };
@@ -28,6 +42,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1958136C1D7076E600ADADB3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		1958138E1D72DB4500ADADB3 /* nail1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail1.html; sourceTree = "<group>"; };
+		195813921D72FC7400ADADB3 /* nail2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail2.html; sourceTree = "<group>"; };
+		195813941D72FD3800ADADB3 /* nail3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail3.html; sourceTree = "<group>"; };
+		195813961D72FD4500ADADB3 /* nail4.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail4.html; sourceTree = "<group>"; };
+		195813981D72FD5400ADADB3 /* nail5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail5.html; sourceTree = "<group>"; };
+		1958139B1D72FDB200ADADB3 /* nail6.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail6.html; sourceTree = "<group>"; };
+		1958139F1D72FDF800ADADB3 /* nail8.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail8.html; sourceTree = "<group>"; };
+		195813A11D72FE0D00ADADB3 /* nail9.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail9.html; sourceTree = "<group>"; };
+		195813A31D72FE6500ADADB3 /* nail7.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail7.html; sourceTree = "<group>"; };
+		195813A51D72FE6A00ADADB3 /* nail10.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail10.html; sourceTree = "<group>"; };
+		195813A71D72FE7B00ADADB3 /* nail11.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail11.html; sourceTree = "<group>"; };
+		195813A91D7304A300ADADB3 /* ForFirstWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForFirstWebViewController.swift; sourceTree = "<group>"; };
+		195813AB1D73718500ADADB3 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		19B37DF51D700307006AE30C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		19B37E151D70173D006AE30C /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		19FBE69A1D671C6B009D379F /* NailSalon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NailSalon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,9 +92,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1958139A1D72FD7A00ADADB3 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				1958138E1D72DB4500ADADB3 /* nail1.html */,
+				195813921D72FC7400ADADB3 /* nail2.html */,
+				195813941D72FD3800ADADB3 /* nail3.html */,
+				195813961D72FD4500ADADB3 /* nail4.html */,
+				195813981D72FD5400ADADB3 /* nail5.html */,
+				1958139B1D72FDB200ADADB3 /* nail6.html */,
+				195813A31D72FE6500ADADB3 /* nail7.html */,
+				1958139F1D72FDF800ADADB3 /* nail8.html */,
+				195813A11D72FE0D00ADADB3 /* nail9.html */,
+				195813A51D72FE6A00ADADB3 /* nail10.html */,
+				195813A71D72FE7B00ADADB3 /* nail11.html */,
+				1958136C1D7076E600ADADB3 /* index.html */,
+			);
+			name = HTML;
+			sourceTree = "<group>";
+		};
 		19FBE6911D671C6B009D379F = {
 			isa = PBXGroup;
 			children = (
+				1958139A1D72FD7A00ADADB3 /* HTML */,
 				19FBE69C1D671C6B009D379F /* NailSalon */,
 				19FBE69B1D671C6B009D379F /* Products */,
 				D91766C8A03B2D15F303C072 /* Pods */,
@@ -88,9 +136,11 @@
 				19FBE6B91D6EB2EA009D379F /* NailSalonTableViewController.swift */,
 				19FBE6C71D6EDA4A009D379F /* ResultViewController.swift */,
 				19FBE6C31D6ED9C0009D379F /* FromPicsTableViewController.swift */,
+				195813AB1D73718500ADADB3 /* Const.swift */,
 				19FBE69D1D671C6B009D379F /* AppDelegate.swift */,
 				19FBE69F1D671C6B009D379F /* ViewController.swift */,
 				19FBE6A11D671C6B009D379F /* Main.storyboard */,
+				195813A91D7304A300ADADB3 /* ForFirstWebViewController.swift */,
 				19FBE6C91D6EDAD9009D379F /* FromDetailViewController.swift */,
 				19FBE6C51D6EDA29009D379F /* ForFirstViewController.swift */,
 				19FBE6BF1D6ED79A009D379F /* FromPicsTableViewCell.swift */,
@@ -186,10 +236,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1958136D1D7076E600ADADB3 /* index.html in Resources */,
 				19FBE6A81D671C6B009D379F /* LaunchScreen.storyboard in Resources */,
+				195813991D72FD5400ADADB3 /* nail5.html in Resources */,
+				195813931D72FC7400ADADB3 /* nail2.html in Resources */,
+				1958138F1D72DB4500ADADB3 /* nail1.html in Resources */,
 				19FBE6BE1D6EB529009D379F /* NailSalonTableViewCell.xib in Resources */,
+				195813A21D72FE0D00ADADB3 /* nail9.html in Resources */,
+				195813971D72FD4500ADADB3 /* nail4.html in Resources */,
+				195813A41D72FE6500ADADB3 /* nail7.html in Resources */,
 				19FBE6A51D671C6B009D379F /* Assets.xcassets in Resources */,
+				195813A81D72FE7B00ADADB3 /* nail11.html in Resources */,
+				1958139C1D72FDB200ADADB3 /* nail6.html in Resources */,
+				195813951D72FD3800ADADB3 /* nail3.html in Resources */,
+				195813A01D72FDF800ADADB3 /* nail8.html in Resources */,
 				19FBE6A31D671C6B009D379F /* Main.storyboard in Resources */,
+				195813A61D72FE6A00ADADB3 /* nail10.html in Resources */,
 				19B37DF61D700307006AE30C /* GoogleService-Info.plist in Resources */,
 				19FBE6C21D6ED79A009D379F /* FromPicsTableViewCell.xib in Resources */,
 			);
@@ -260,7 +322,9 @@
 				19FBE6C61D6EDA29009D379F /* ForFirstViewController.swift in Sources */,
 				19FBE6C41D6ED9C0009D379F /* FromPicsTableViewController.swift in Sources */,
 				19B37E161D70173D006AE30C /* PostData.swift in Sources */,
+				195813AA1D7304A300ADADB3 /* ForFirstWebViewController.swift in Sources */,
 				19FBE6BD1D6EB529009D379F /* NailSalonTableViewCell.swift in Sources */,
+				195813AC1D73718500ADADB3 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

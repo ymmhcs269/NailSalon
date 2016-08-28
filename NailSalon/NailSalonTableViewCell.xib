@@ -69,7 +69,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="budgetLable" destination="yBA-de-16c" id="DEG-EX-6mn"/>
+                <outlet property="budgetLabel" destination="yBA-de-16c" id="qJx-C1-Fma"/>
                 <outlet property="nailImageView" destination="pLY-R6-BE1" id="iQ2-Hi-e3z"/>
                 <outlet property="stationLabel" destination="Boc-IW-FVW" id="SFn-wg-gei"/>
             </connections>

@@ -11,7 +11,7 @@ import Firebase
 import FirebaseDatabase
 
 class PostData: NSObject {
-    /*仮*/var id: String?
+    var id: String?
     var name: String?
     var budget: Int?
     var menu1: String?
