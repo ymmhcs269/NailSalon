@@ -7,6 +7,10 @@
 //
 
 import UIKit
+//必要かは不明
+import Firebase
+import FirebaseAuth
+
 
 class ViewController: UIViewController {
     
@@ -22,7 +26,9 @@ class ViewController: UIViewController {
         //画像から検索できる画面に遷移
     @IBAction func fromPics(sender: AnyObject) {
         let storyboard: UIStoryboard = self.storyboard!
-        let nextView = storyboard.instantiateViewControllerWithIdentifier("FromPics") as! FromPicsTableViewController
+        //検索結果を見るための実験中
+        //let nextView = storyboard.instantiateViewControllerWithIdentifier("FromPics") as! FromPicsTableViewController
+        let nextView = storyboard.instantiateViewControllerWithIdentifier("NailSalon") as! NailSalonTableViewController
         self.presentViewController(nextView, animated: true, completion: nil)
     }
     

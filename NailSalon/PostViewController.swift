@@ -46,7 +46,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         
         // 辞書を作成してFirebaseに保存する(評価はまだ入れていない)
-         let postData = ["name": salonNameTextField.text!, "station": stationTextField.text!, "menu1": menuTextField1.text!,"menu2": menuTextField2.text!, "budget": budgetTextField.text!, "image": imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)]
+         let postData = ["name": salonNameTextField.text!, "station": stationTextField.text!, "menu1": menuTextField1.text!,"menu2": menuTextField2.text!, "budget": budgetTextField.text!, "image": imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength),]
          postRef.childByAutoId().setValue(postData)
          
         /*let postData = ["caption": textField.text!, "image": imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength), "name": name, "time": time]
@@ -54,7 +54,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         
         // 全てのモーダルを閉じる
-        UIApplication.sharedApplication().keyWindow?.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
+    UIApplication.sharedApplication().keyWindow?.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     
@@ -93,7 +93,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
         if info[UIImagePickerControllerOriginalImage] != nil {
-            // (今の所ここがダメ)撮影/選択された画像を取得する
+            // 撮影/選択された画像を取得する
             let image = info[UIImagePickerControllerOriginalImage] as! UIImage
             nailImageView.image = image
             

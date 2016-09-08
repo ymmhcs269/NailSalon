@@ -11,29 +11,36 @@ import UIKit
 class ForFirstWebViewController: UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
-    
-    /*今のところよくわかっていない
-     var url:String = "nail1.html."
-    
-    func loadURL() {
-        let requestURL = NSURL(string: url)
-        let request = NSURLRequest(URL: requestURL!)
-        webView.loadRequest(request)
+    @IBAction func backButton(sender: AnyObject) {
+        // 画面を閉じる
+        dismissViewControllerAnimated(true, completion: nil)
     }
-     */
     
-    
-    
-    
-    override func viewDidLoad() {
+    //urlの番号を決めるための変数
+    //var count = 0
+    //urlを指定して表示させるための変数
+    var targetURL = NSBundle.mainBundle().pathForResource("nail1", ofType: "html");
+   
+        override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        loadAddressURL()
+         //urlを指定して表示させるための変数
+        //指定したページを表示させる方法
+        //targetURL = NSBundle.mainBundle().pathForResource("nail\(count)", ofType: "html");
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func loadAddressURL() {
+        let requestURL = NSURL(string: targetURL!)
+        //!がいるのかは不明
+        let req = NSURLRequest(URL: requestURL!)
+        webView.loadRequest(req)
+    }
+
     
     
 }
