@@ -75,8 +75,8 @@
 		19FBE6C71D6EDA4A009D379F /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		19FBE6C91D6EDAD9009D379F /* FromDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromDetailViewController.swift; sourceTree = "<group>"; };
 		19FBE6CB1D6EDB03009D379F /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		22B33808432176BCDCD09E82 /* Pods-NailSalon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NailSalon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NailSalon/Pods-NailSalon.debug.xcconfig"; sourceTree = "<group>"; };
-		E825F87A40BBF14BC35B4D31 /* Pods-NailSalon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NailSalon.release.xcconfig"; path = "Pods/Target Support Files/Pods-NailSalon/Pods-NailSalon.release.xcconfig"; sourceTree = "<group>"; };
+		2C9B96076B832C4680156CAE /* Pods-NailSalon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NailSalon.release.xcconfig"; path = "Pods/Target Support Files/Pods-NailSalon/Pods-NailSalon.release.xcconfig"; sourceTree = "<group>"; };
+		CFC25641E9C09C7569BDEFEF /* Pods-NailSalon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NailSalon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NailSalon/Pods-NailSalon.debug.xcconfig"; sourceTree = "<group>"; };
 		FFDE1B6F6C7FAA87D1C94ACE /* Pods_NailSalon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NailSalon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,8 +168,8 @@
 		D91766C8A03B2D15F303C072 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				22B33808432176BCDCD09E82 /* Pods-NailSalon.debug.xcconfig */,
-				E825F87A40BBF14BC35B4D31 /* Pods-NailSalon.release.xcconfig */,
+				CFC25641E9C09C7569BDEFEF /* Pods-NailSalon.debug.xcconfig */,
+				2C9B96076B832C4680156CAE /* Pods-NailSalon.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -435,7 +435,7 @@
 		};
 		19FBE6AD1D671C6B009D379F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22B33808432176BCDCD09E82 /* Pods-NailSalon.debug.xcconfig */;
+			baseConfigurationReference = CFC25641E9C09C7569BDEFEF /* Pods-NailSalon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NailSalon/Info.plist;
@@ -447,7 +447,7 @@
 		};
 		19FBE6AE1D671C6B009D379F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E825F87A40BBF14BC35B4D31 /* Pods-NailSalon.release.xcconfig */;
+			baseConfigurationReference = 2C9B96076B832C4680156CAE /* Pods-NailSalon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NailSalon/Info.plist;

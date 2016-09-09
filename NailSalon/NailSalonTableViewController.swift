@@ -86,7 +86,7 @@ class NailSalonTableViewController: UIViewController, UITableViewDataSource, UIT
             // セルを取得してデータを設定する
             let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NailSalonTableViewCell
             //let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-            cell.postData = postArray[indexPath.row]
+            cell.setPostData(postArray[indexPath.row])
 
           
             

@@ -1,0 +1,6 @@
+framework module Pods_NailSalon {
+  umbrella header "Pods-NailSalon-umbrella.h"
+
+  export *
+  module * { export * }
+}

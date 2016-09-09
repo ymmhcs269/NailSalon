@@ -17,16 +17,17 @@ class ForFirstWebViewController: UIViewController {
     }
     
     //urlの番号を決めるための変数
-    //var count = 0
+    var count = 0
     //urlを指定して表示させるための変数
     var targetURL = NSBundle.mainBundle().pathForResource("nail1", ofType: "html");
    
         override func viewDidLoad() {
         super.viewDidLoad()
-        loadAddressURL()
-         //urlを指定して表示させるための変数
-        //指定したページを表示させる方法
-        //targetURL = NSBundle.mainBundle().pathForResource("nail\(count)", ofType: "html");
+    //指定したページを表示させる方法
+    if (count >= 0 && count < 10 ){
+        targetURL = NSBundle.mainBundle().pathForResource(String(format: "nail%d", count + 1), ofType: "html")
+    }
+    loadAddressURL()
     }
     
     override func didReceiveMemoryWarning() {

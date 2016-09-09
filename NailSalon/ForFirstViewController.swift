@@ -15,7 +15,7 @@ class ForFirstViewController: UIViewController, UITableViewDelegate, UITableView
    //テーブルビューの内容
     let html = ["ソフトジェルとハードジェルの違い","ジェルネイルの保ち","みんながお店を決めるときのこだわり","ジェルネイルとは？？","爪に対しての負担は大丈夫？？","スカルプって何？？","ジェルネイルのオフ","ジェルネイルを長持ちさせるために","マットネイルとは","爪が短いけど大丈夫？","家でジェルネイルをすることは可能？"]
     
-    //var count = 0
+    var page_num = 0
     
     @IBOutlet weak var forFirstTableView: UITableView!
     
@@ -53,6 +53,7 @@ class ForFirstViewController: UIViewController, UITableViewDelegate, UITableView
     
     // Cell が選択された場合
         func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            page_num = indexPath.row
         // SubViewController へ遷移するために Segue を呼び出す
         performSegueWithIdentifier("toForFirstWeb",sender: self)
     }
@@ -61,7 +62,7 @@ class ForFirstViewController: UIViewController, UITableViewDelegate, UITableView
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "toForFirstWeb") {
             let forFirstWebViewController:ForFirstWebViewController = (segue.destinationViewController as? ForFirstWebViewController)!
-            //forFirstWebViewController.count = html[count]
+            forFirstWebViewController.count = page_num
         }
              }
 

@@ -14,8 +14,7 @@ class NailSalonTableViewCell: UITableViewCell {
     @IBOutlet weak var nailImageView: UIImageView!
     @IBOutlet weak var budgetLabel: UILabel!
     
-    var postData: PostData!
-  
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,16 +24,16 @@ class NailSalonTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func setPostData(postData: PostData){
 
-    override func layoutSubviews() {
         nailImageView.image = postData.image
         stationLabel.text = "\(postData.station!)"
         budgetLabel.text = "\(postData.budget!)"
         
         
-        
-        super.layoutSubviews()
+    }
+    
     }
         
-    }
+
 
