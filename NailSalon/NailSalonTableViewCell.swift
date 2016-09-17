@@ -13,7 +13,7 @@ class NailSalonTableViewCell: UITableViewCell {
     @IBOutlet weak var stationLabel: UILabel!
     @IBOutlet weak var nailImageView: UIImageView!
     @IBOutlet weak var budgetLabel: UILabel!
-    
+    @IBOutlet weak var nameLabel: UILabel!
     
 
     override func awakeFromNib() {
@@ -29,6 +29,8 @@ class NailSalonTableViewCell: UITableViewCell {
         nailImageView.image = postData.image
         stationLabel.text = "\(postData.station!)"
         budgetLabel.text = "\(postData.budget!)"
+        nameLabel.text = "\(postData.name!)"
+        
         
         
     }

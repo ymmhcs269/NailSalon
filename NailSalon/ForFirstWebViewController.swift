@@ -37,7 +37,6 @@ class ForFirstWebViewController: UIViewController {
     
     func loadAddressURL() {
         let requestURL = NSURL(string: targetURL!)
-        //!がいるのかは不明
         let req = NSURLRequest(URL: requestURL!)
         webView.loadRequest(req)
     }

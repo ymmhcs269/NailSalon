@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="126" id="KGk-i7-Jjw" customClass="FromPicsTableViewCell" customModule="NailSalon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="FromPicsSell" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-je-YGT">
+                        <rect key="frame" x="10" y="9" width="105" height="105.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cZ3-je-YGT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="PvS-Ee-f63"/>
+                    <constraint firstAttribute="bottom" secondItem="cZ3-je-YGT" secondAttribute="bottom" constant="10" id="Sed-yt-s74"/>
+                    <constraint firstAttribute="trailing" secondItem="cZ3-je-YGT" secondAttribute="trailing" constant="10" id="UyD-2N-DY9"/>
+                    <constraint firstItem="cZ3-je-YGT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rAy-fN-aqu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageView" destination="cZ3-je-YGT" id="930-h6-b9K"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="255"/>
+        </tableViewCell>
+    </objects>
+</document>

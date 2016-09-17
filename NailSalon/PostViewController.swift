@@ -20,7 +20,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var menuTextField1: UITextField!
     @IBOutlet weak var menuTextField2: UITextField!
     @IBOutlet weak var budgetTextField: UITextField!
-    //(仮)@IBOutlet weak var assessmentTextField: UITextField!
+    @IBOutlet weak var urlTextField: UITextField!
     
     
     
@@ -46,7 +46,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         
         // 辞書を作成してFirebaseに保存する(評価はまだ入れていない)
-         let postData = ["name": salonNameTextField.text!, "station": stationTextField.text!, "menu1": menuTextField1.text!,"menu2": menuTextField2.text!, "budget": budgetTextField.text!, "image": imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength),]
+         let postData = ["name": salonNameTextField.text!, "station": stationTextField.text!, "menu1": menuTextField1.text!,"menu2": menuTextField2.text!, "budget": budgetTextField.text!,"url": urlTextField.text!, "image": imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength),]
          postRef.childByAutoId().setValue(postData)
          
         /*let postData = ["caption": textField.text!, "image": imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength), "name": name, "time": time]

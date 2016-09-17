@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "34B4A4E679BA1D5976A7FCEF61CEE6AA"
+               BlueprintIdentifier = "16DEF714ADF40D63457BE62252DF2181"
                BuildableName = "Pods_NailSalon.framework"
                BlueprintName = "Pods-NailSalon"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "34B4A4E679BA1D5976A7FCEF61CEE6AA"
+            BlueprintIdentifier = "16DEF714ADF40D63457BE62252DF2181"
             BuildableName = "Pods_NailSalon.framework"
             BlueprintName = "Pods-NailSalon"
             ReferencedContainer = "container:Pods.xcodeproj">

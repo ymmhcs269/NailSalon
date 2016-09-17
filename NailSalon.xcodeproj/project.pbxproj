@@ -31,8 +31,6 @@
 		19FBE6BA1D6EB2EA009D379F /* NailSalonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6B91D6EB2EA009D379F /* NailSalonTableViewController.swift */; };
 		19FBE6BD1D6EB529009D379F /* NailSalonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6BB1D6EB529009D379F /* NailSalonTableViewCell.swift */; };
 		19FBE6BE1D6EB529009D379F /* NailSalonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19FBE6BC1D6EB529009D379F /* NailSalonTableViewCell.xib */; };
-		19FBE6C11D6ED79A009D379F /* FromPicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6BF1D6ED79A009D379F /* FromPicsTableViewCell.swift */; };
-		19FBE6C21D6ED79A009D379F /* FromPicsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19FBE6C01D6ED79A009D379F /* FromPicsTableViewCell.xib */; };
 		19FBE6C41D6ED9C0009D379F /* FromPicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6C31D6ED9C0009D379F /* FromPicsTableViewController.swift */; };
 		19FBE6C61D6EDA29009D379F /* ForFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6C51D6EDA29009D379F /* ForFirstViewController.swift */; };
 		19FBE6C81D6EDA4A009D379F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE6C71D6EDA4A009D379F /* ResultViewController.swift */; };
@@ -42,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		191EB6821D89AA9F0094BCB5 /* NailSalon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NailSalon-Bridging-Header.h"; sourceTree = "<group>"; };
 		1958136C1D7076E600ADADB3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		1958138E1D72DB4500ADADB3 /* nail1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail1.html; sourceTree = "<group>"; };
 		195813921D72FC7400ADADB3 /* nail2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nail2.html; sourceTree = "<group>"; };
@@ -68,8 +67,6 @@
 		19FBE6B91D6EB2EA009D379F /* NailSalonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NailSalonTableViewController.swift; sourceTree = "<group>"; };
 		19FBE6BB1D6EB529009D379F /* NailSalonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NailSalonTableViewCell.swift; sourceTree = "<group>"; };
 		19FBE6BC1D6EB529009D379F /* NailSalonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NailSalonTableViewCell.xib; sourceTree = "<group>"; };
-		19FBE6BF1D6ED79A009D379F /* FromPicsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromPicsTableViewCell.swift; sourceTree = "<group>"; };
-		19FBE6C01D6ED79A009D379F /* FromPicsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FromPicsTableViewCell.xib; sourceTree = "<group>"; };
 		19FBE6C31D6ED9C0009D379F /* FromPicsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromPicsTableViewController.swift; sourceTree = "<group>"; };
 		19FBE6C51D6EDA29009D379F /* ForFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForFirstViewController.swift; sourceTree = "<group>"; };
 		19FBE6C71D6EDA4A009D379F /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -136,19 +133,18 @@
 				19FBE6B91D6EB2EA009D379F /* NailSalonTableViewController.swift */,
 				19FBE6C71D6EDA4A009D379F /* ResultViewController.swift */,
 				19FBE6C31D6ED9C0009D379F /* FromPicsTableViewController.swift */,
-				195813AB1D73718500ADADB3 /* Const.swift */,
-				19FBE69D1D671C6B009D379F /* AppDelegate.swift */,
-				19FBE69F1D671C6B009D379F /* ViewController.swift */,
 				19FBE6A11D671C6B009D379F /* Main.storyboard */,
+				19FBE69F1D671C6B009D379F /* ViewController.swift */,
+				19FBE69D1D671C6B009D379F /* AppDelegate.swift */,
 				19FBE6C91D6EDAD9009D379F /* FromDetailViewController.swift */,
 				195813A91D7304A300ADADB3 /* ForFirstWebViewController.swift */,
 				19FBE6C51D6EDA29009D379F /* ForFirstViewController.swift */,
-				19FBE6BF1D6ED79A009D379F /* FromPicsTableViewCell.swift */,
-				19FBE6C01D6ED79A009D379F /* FromPicsTableViewCell.xib */,
 				19FBE6CB1D6EDB03009D379F /* PostViewController.swift */,
 				19B37E151D70173D006AE30C /* PostData.swift */,
 				19FBE6BB1D6EB529009D379F /* NailSalonTableViewCell.swift */,
 				19FBE6BC1D6EB529009D379F /* NailSalonTableViewCell.xib */,
+				191EB6821D89AA9F0094BCB5 /* NailSalon-Bridging-Header.h */,
+				195813AB1D73718500ADADB3 /* Const.swift */,
 				19FBE6A41D671C6B009D379F /* Assets.xcassets */,
 				19FBE6A61D671C6B009D379F /* LaunchScreen.storyboard */,
 				19FBE6A91D671C6B009D379F /* Info.plist */,
@@ -253,7 +249,6 @@
 				19FBE6A31D671C6B009D379F /* Main.storyboard in Resources */,
 				195813A61D72FE6A00ADADB3 /* nail10.html in Resources */,
 				19B37DF61D700307006AE30C /* GoogleService-Info.plist in Resources */,
-				19FBE6C21D6ED79A009D379F /* FromPicsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +307,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19FBE6C11D6ED79A009D379F /* FromPicsTableViewCell.swift in Sources */,
 				19FBE6BA1D6EB2EA009D379F /* NailSalonTableViewController.swift in Sources */,
 				19FBE6A01D671C6B009D379F /* ViewController.swift in Sources */,
 				19FBE6C81D6EDA4A009D379F /* ResultViewController.swift in Sources */,
@@ -440,6 +434,55 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NailSalon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ESTabBarController\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseDatabase\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleNetworkingUtilities\"",
+					"-framework",
+					"\"GoogleParsingUtilities\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TTTAttributedLabel\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mycompany.NailSalon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -452,6 +495,55 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NailSalon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ESTabBarController\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseDatabase\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleNetworkingUtilities\"",
+					"-framework",
+					"\"GoogleParsingUtilities\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TTTAttributedLabel\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mycompany.NailSalon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

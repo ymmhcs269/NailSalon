@@ -16,12 +16,12 @@ class PostData: NSObject {
     var budget: String?
     var menu1: String?
     var menu2: String?
-    var assessment: String?
+    var url: String?
     var station: String?
     /*仮*/var imageString: String?
     var image: UIImage?
 
-    init(snapshot: FIRDataSnapshot, myId: String) {
+    init(snapshot: FIRDataSnapshot) {
         id = snapshot.key
         
         let valueDictionary = snapshot.value as! [String: AnyObject]
@@ -37,7 +37,7 @@ class PostData: NSObject {
      
         menu2 = valueDictionary["menu2"] as? String
      
-        assessment = valueDictionary["assessment"] as? String
+        url = valueDictionary["url"] as? String
      
         station = valueDictionary["station"] as? String
         
