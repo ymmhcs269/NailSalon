@@ -60,22 +60,26 @@ class NailSalonTableViewController: UIViewController, UITableViewDataSource, UIT
             
             // PostDataクラスを生成して受け取ったデータを設定する
             let postData = PostData(snapshot: snapshot)
-            
+            //検索結果の表示
+                //駅名が空白の場合
+                //料金も空白
             if (self.nearStation == "") {
-                // var budget_price:Int = Int
                 if (self.minPrice == "" && self.maxPrice == ""){
                     self.postArray.insert(postData, atIndex: 0)
                 }
+                //最高金額のみデータあり
                 else if (self.minPrice == "" && self.maxPrice != ""){
                     if (Int(postData.budget!) < Int(self.maxPrice)!){
                         self.postArray.insert(postData, atIndex: 0)
                     }
                 }
+                //最低金額のみデータあり
                 else if (self.minPrice != "" && self.maxPrice == ""){
                     if (Int(postData.budget!) > Int(self.minPrice)!){
                         self.postArray.insert(postData, atIndex: 0)
                     }
                 }
+                //金額両方にデータあり
                 else if (self.minPrice != "" && self.maxPrice != ""){
                     if (Int(postData.budget!) < Int(self.maxPrice)! && Int(postData.budget!) > Int(self.minPrice)!) {
                         self.postArray.insert(postData, atIndex: 0)
@@ -85,6 +89,7 @@ class NailSalonTableViewController: UIViewController, UITableViewDataSource, UIT
                 
                 
             }else{
+                //駅名にデータありの場合
                 if(postData.station == self.nearStation){
                     if (self.minPrice == "" && self.maxPrice == ""){
                         self.postArray.insert(postData, atIndex: 0)
@@ -107,12 +112,6 @@ class NailSalonTableViewController: UIViewController, UITableViewDataSource, UIT
                     
                 }
             }
-            
-            
-            /*
-             if (self.checkPriceRange( Int(self.minPrice)!, MaxPrice:Int(self.maxPrice)!, Budget:Int(postData.budget!)!)){
-             self.postArray.insert(postData, atIndex: 0)
-             }*/
             
             
             // TableViewを再表示する
@@ -174,41 +173,6 @@ class NailSalonTableViewController: UIViewController, UITableViewDataSource, UIT
         // Auto Layoutを使ってセルの高さを動的に変更する
         return UITableViewAutomaticDimension
     }
-    
-    
-    
-    // セル内のボタンがタップされた時に呼ばれるメソッド
-    func handleButton(sender: UIButton, event:UIEvent) {
-        
-        // タップされたセルのインデックスを求める
-        let touch = event.allTouches()?.first
-        let point = touch!.locationInView(self.tableView)
-        let indexPath = tableView.indexPathForRowAtPoint(point)
-        
-        // 配列からタップされたインデックスのデータを取り出す
-        let postData = postArray[indexPath!.row]
-        
-        
-        // Firebaseに保存するデータの準備
-        
-        let image = postData.image
-        let name = postData.name
-        let station = postData.station
-        let menu1 = postData.menu1
-        let menu2 = postData.menu2
-        let budget = postData.budget
-        let url = postData.url
-        
-        
-        
-        //辞書を作成してFirebaseに保存する
-        let post = ["name": name!, "station": station!, "menu1": menu1!,"menu2": menu2!, "budget": budget!, "image":image!, "url":url!]
-        
-        let postRef = FIRDatabase.database().reference().child(CommonConst.PostPATH)
-        postRef.child(postData.id!).setValue(post)
-        
-    }
-    
     
     
     

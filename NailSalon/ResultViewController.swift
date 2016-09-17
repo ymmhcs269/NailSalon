@@ -57,31 +57,7 @@ class ResultViewController: UIViewController,UITextViewDelegate,TTTAttributedLab
    
     override func viewWillAppear(animated:Bool){
         super.viewWillAppear(animated)
-        // 要素が追加されたらpostArrayに追加してTableViewを再表示する
-       /* FIRDatabase.database().reference().child(CommonConst.PostPATH).observeEventType(.ChildAdded, withBlock: { snapshot in
-            
-            // PostDataクラスを生成して受け取ったデータを設定する
-            let postData = PostData(snapshot: snapshot)
-            //self.postArray.insert(postData, atIndex: 0)
-            self.postArray.insert(postData, atIndex: self.page_num)
-            
-            
-            print(postData.budget)
-            print(postData.station)
-            print(postData.menu1)
-            print(postData.menu2)
-            
-            self.nailImageView.image = postData.image
-            self.stationLabel.text = "\(postData.station!)"
-            self.budgetLabel.text = "\(postData.budget!)"
-            self.nameLabel.text = "\(postData.name!)"
-            self.stationLabel.text = "\(postData.station!)"
-            self.menuLabel1.text =  "\(postData.menu1!)"
-            self.menuLabel2.text =  "\(postData.menu2!)"
-            self.urlLabel.text =  "\(postData.url!)"
-                    
-        })*/
-        
+                
         self.nailImageView.image = self.postArray.image
         self.stationLabel.text = "\(self.postArray.station!)"
         self.budgetLabel.text = "\(self.postArray.budget!)"

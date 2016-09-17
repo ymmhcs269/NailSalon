@@ -18,9 +18,9 @@ class FromPicsTableViewController: UIViewController, UICollectionViewDataSource,
     @IBOutlet weak var collectionView: UICollectionView!
     var postArray: [PostData] = []
     var imageView = UIImageView()
-    var button = UIButton()
-    //var photo = []
+    var selectImage:UIImage?
     var page_num3 = 0
+    var label = UILabel()
     
     
             
@@ -54,9 +54,8 @@ class FromPicsTableViewController: UIViewController, UICollectionViewDataSource,
     
     //セルの個数を指定するデリゲードメソッッド
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //最終的にはこっちにする！👇
+        //登録件数分表示するように設定
         return postArray.count
-        //return 10;
     }
 
 
@@ -78,6 +77,9 @@ class FromPicsTableViewController: UIViewController, UICollectionViewDataSource,
         //UIImageをUIImageViewのimageとして設定
         self.imageView.image = cellImage
         
+        // Tag番号を使ってLabelのインスタンス生成
+        self.label = cell.contentView.viewWithTag(2) as! UILabel
+        label.text = postArray[indexPath.row].name
         return cell
     }
     
@@ -96,58 +98,22 @@ class FromPicsTableViewController: UIViewController, UICollectionViewDataSource,
         }
     
     
-    
-    // セル内のボタンがタップされた時に呼ばれるメソッド
-    func handleButton(sender: UIButton, event:UIEvent) {
-        
-        // タップされたセルのインデックスを求める
-        let touch = event.allTouches()?.first
-        let point = touch!.locationInView(self.collectionView)
-        let indexPath = collectionView!.indexPathForItemAtPoint(point)
-        
-        // 配列からタップされたインデックスのデータを取り出す
-        let postData = postArray[indexPath!.row]
-        
-        
-        // Firebaseに保存するデータの準備
-        
-        
-        let image = postData.image
-        let name = postData.name
-        let station = postData.station
-        let menu1 = postData.menu1
-        let menu2 = postData.menu2
-        let budget = postData.budget
-        let url = postData.url
-        
-        
-        
-        //辞書を作成してFirebaseに保存する
-        let post = ["name": name!, "station": station!, "menu1": menu1!,"menu2": menu2!, "budget": budget!, "image":image!, "url":url!]
-        
-        let postRef = FIRDatabase.database().reference().child(CommonConst.PostPATH)
-        postRef.child(postData.id!).setValue(post)
-        
-    }
- 
-
-
-    
-    
     // Cell が選択された場合
-    func collectionView(collectionView: UICollectionView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         page_num3 = indexPath.row
+        // [indexPath.row] から画像名を探し、UImage を設定
+        //selectImage = postArray[indexPath.row].image! as UIImage
+        //if selectImage != nil {
         // SubViewController へ遷移するために Segue を呼び出す
-        performSegueWithIdentifier("toResult",sender: self)
+        performSegueWithIdentifier("toResult",sender: nil)
+       // }
     }
-    
     
     
     // Segue 準備
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "toResult") {
             let resultViewController:ResultViewController = (segue.destinationViewController as? ResultViewController)!
-            // resultViewController.count2 = page_num2
             resultViewController.postArray = postArray[page_num3]
             resultViewController.page_num = page_num3
         }
