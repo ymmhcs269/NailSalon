@@ -74,6 +74,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         self.menuTextField1.delegate = self
         self.menuTextField2.delegate = self
         self.budgetTextField.delegate = self
+        self.urlTextField.delegate = self
         
     }
     
