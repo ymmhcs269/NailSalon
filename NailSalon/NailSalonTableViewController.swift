@@ -90,20 +90,24 @@ class NailSalonTableViewController: UIViewController, UITableViewDataSource, UIT
                 
             }else{
                 //駅名にデータありの場合
+                //料金が空白
                 if(postData.station == self.nearStation){
                     if (self.minPrice == "" && self.maxPrice == ""){
                         self.postArray.insert(postData, atIndex: 0)
                     }
+                    //最高金額にデータあり
                     else if (self.minPrice == "" && self.maxPrice != ""){
                         if (Int(postData.budget!) < Int(self.maxPrice)!){
                             self.postArray.insert(postData, atIndex: 0)
                         }
                     }
+                    //最低金額にデータあり
                     else if (self.minPrice != "" && self.maxPrice == ""){
                         if (Int(postData.budget!) > Int(self.minPrice)!){
                             self.postArray.insert(postData, atIndex: 0)
                         }
                     }
+                    //金額両方にデータあり
                     else if (self.minPrice != "" && self.maxPrice != ""){
                         if (Int(postData.budget!) < Int(self.maxPrice)! && Int(postData.budget!) > Int(self.minPrice)!) {
                             self.postArray.insert(postData, atIndex: 0)
@@ -137,11 +141,6 @@ class NailSalonTableViewController: UIViewController, UITableViewDataSource, UIT
                 }
             }
             
-            // 差し替えるため一度削除する
-            //self.postArray = []
-            //self.postArray.removeAll()
-            //self.postArray = []
-            //self.postArray.removeAtIndex(index)
             
             // 削除したところに更新済みのでデータを追加する
             self.postArray.insert(postData, atIndex: index)
